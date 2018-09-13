@@ -9,3 +9,12 @@ Version: 0.1.0
 */
 
 @import url("../popper/style.css");
+
+
+.site-title {
+  font-weight: 300;
+}
+
+.site-description {
+  font-style: italic;
+}
