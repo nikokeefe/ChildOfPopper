@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 
-<?php 
+<?php
   if (is_page_template('page-templates/page-sidebar-right.php')) { ?>
     <div id="page" class="hfeed site sidebar-right">
   <?php } else { ?>
@@ -30,7 +30,7 @@
   <?php }
 ?>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'popper' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'popper-child' ); ?></a>
 
 
 	<?php
@@ -75,7 +75,7 @@
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation clear" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'popper' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'popper-child' ); ?></button>
 
 				<div class="all-menus centered">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
