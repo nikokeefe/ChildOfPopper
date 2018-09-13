@@ -18,3 +18,13 @@ Version: 0.1.0
 .site-description {
   font-style: italic;
 }
+
+.sticky::before {
+    display: block;
+    padding: 0.2em 1em;
+    text-align: right;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 80%;
+    content: "Sticky post";
+    background-color: hsl(0, 0%, 80%);
+}
