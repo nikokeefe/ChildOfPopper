@@ -10,6 +10,52 @@ Version: 0.1.0
 
 @import url("../popper/style.css");
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.widget ul,
+.widget ol,
+.widget_calendar,
+.site-firstletter,
+.site-title,
+.main-navigation,
+.comment-navigation,
+.posts-navigation,
+.post-navigation,
+.paging-navigation,
+.continue-reading a,
+.entry-content .continue-reading a,
+.entry-meta,
+.entry-footer,
+.index-entry-meta,
+.comment-meta,
+.reply a,
+.comment-form,
+.wp-caption,
+.gallery-caption,
+.site-footer {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
+.rssSummary,
+.widget_popper_recent_comments .excerpt,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+
 body, .widget {
     background-color: #2a2c39;
     color: #e9e9eb;
@@ -27,7 +73,7 @@ body, .widget {
     display: block;
     padding: .2em 1em;
     text-align: right;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 80%;
     content: "Sticky Post";
     background-color: hsl(0, 0%, 80%);

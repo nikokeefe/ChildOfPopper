@@ -30,6 +30,14 @@ function popper_child_setup() {
 add_action( 'after_setup_theme', 'popper_child_setup');
 
 
+function popper_child_scripts() {
+  wp_enqueue_style( 'popper-child-fonts',
+  'https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,500i,800,800i|Anonymous+Pro:400,400i,700,700i');
+  wp_dequeue_style( 'popper-fira-sans' );
+  wp_dequeue_style( 'popper-merriweather' );
+}
+add_action( 'wp_enqueue_scripts', 'popper_child_scripts', 11 );
+
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
