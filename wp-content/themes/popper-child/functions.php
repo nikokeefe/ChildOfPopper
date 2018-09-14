@@ -8,8 +8,25 @@ function popper_child_setup() {
 	register_nav_menus( array(
 		'secondary' => esc_html__( 'Footer Menu', 'popper-child' ),
 	) );
-}
 
+  /**
+   * Register widget area.
+   *
+   * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+   */
+  function popper_child_widgets_init() {
+  	register_sidebar( array(
+  		'name'          => esc_html__( 'Footer Widgets', 'popper-child' ),
+  		'id'            => 'sidebar-2',
+  		'description'   => '',
+  		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  		'after_widget'  => '</aside>',
+  		'before_title'  => '<h2 class="widget-title">',
+  		'after_title'   => '</h2>',
+  	) );
+  }
+  add_action( 'widgets_init', 'popper_child_widgets_init' );
+}
 add_action( 'after_setup_theme', 'popper_child_setup');
 
 

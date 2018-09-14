@@ -148,6 +148,7 @@ a:focus,
 .footer-navigation ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -162,4 +163,12 @@ a:focus,
 .footer-navigation a:hover,
 .footer-navigation a:focus {
     outline: 1px solid #fff;
+}
+
+/* Footer Widgets */
+
+#tertiary {
+  display: flex;
+  justify-content: center;
+  margin: -3em 0 4em;
 }
